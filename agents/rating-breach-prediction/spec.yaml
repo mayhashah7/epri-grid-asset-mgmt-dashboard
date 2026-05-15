@@ -1,4 +1,4 @@
 name: gam-rating-breach-prediction
 model: gpt-5
-description: Combines thermal models, weather forecasts, and load data to predict transformer/line thermal breach events. Issues curtailment / re-route recommendations and dynamic line ratings.
+description: "Combines thermal models, weather forecasts, and load data to predict transformer/line thermal breach events. Issues curtailment / re-route recommendations and dynamic line ratings."
 tools: [open_case, list_recent_events, get_substation_status, query_meters]

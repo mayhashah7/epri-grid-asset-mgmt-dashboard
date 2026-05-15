@@ -1,4 +1,4 @@
 name: gam-underground-cable-health
 model: gpt-5
-description: Models UG cable insulation degradation from partial-discharge measurements, tan-δ tests, and load history. Forecasts splice failures and circuit re-routing options.
+description: "Models UG cable insulation degradation from partial-discharge measurements, tan-\u03b4 tests, and load history. Forecasts splice failures and circuit re-routing options."
 tools: [open_case, list_recent_events, get_substation_status, query_meters]

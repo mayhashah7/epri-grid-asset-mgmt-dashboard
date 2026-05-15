@@ -1,4 +1,4 @@
 name: gam-orchestrator
 model: gpt-5-mini
-description: Routes Grid Asset Management & Performance requests to the right specialist agent and aggregates evidence.
+description: "Routes Grid Asset Management & Performance requests to the right specialist agent and aggregates evidence."
 tools: [open_case, dispatch_to_agent, list_recent_events, get_substation_status, query_meters]

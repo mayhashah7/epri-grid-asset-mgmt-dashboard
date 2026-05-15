@@ -1,4 +1,4 @@
 name: gam-vegetation-management
 model: gpt-5-mini
-description: Analyzes satellite imagery, LiDAR, and growth models to assess encroachment risk along OH lines. Prioritizes trim activities by risk × cost × environmental impact.
+description: "Analyzes satellite imagery, LiDAR, and growth models to assess encroachment risk along OH lines. Prioritizes trim activities by risk \u00d7 cost \u00d7 environmental impact."
 tools: [open_case, list_recent_events, get_substation_status, query_meters]

@@ -1,4 +1,4 @@
 name: gam-asset-image-analysis
 model: gpt-5-mini
-description: Computer-vision detection of corrosion, mechanical damage, vegetation encroachment, and thermal hotspots across transmission lines, substations, and generation equipment. Quantifies conductor sag, insulator contamination, and structural deformation.
+description: "Computer-vision detection of corrosion, mechanical damage, vegetation encroachment, and thermal hotspots across transmission lines, substations, and generation equipment. Quantifies conductor sag, insulator contamination, and structural deformation."
 tools: [open_case, list_recent_events, get_substation_status, query_meters]

@@ -1,4 +1,4 @@
 name: gam-transformer-overload
 model: gpt-5-mini
-description: Detects transformers operating beyond rating in real time, projects thermal aging impact, and proposes load-transfer or curtailment to neighbors.
+description: "Detects transformers operating beyond rating in real time, projects thermal aging impact, and proposes load-transfer or curtailment to neighbors."
 tools: [open_case, list_recent_events, get_substation_status, query_meters]
