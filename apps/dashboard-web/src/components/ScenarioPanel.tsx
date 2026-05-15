@@ -2,14 +2,14 @@ import { useState } from 'react';
 import { postJson, type Substation } from '../lib/api';
 
 const SCENARIOS = [
-  { id: 'storm-outage',     label: '⛈️ Storm Outage',         agent: 'outage-detection',       hint: 'Knocks a feeder offline' },
-  { id: 'theft',            label: '🕵️ Theft Pattern',        agent: 'theft-detection',        hint: 'Plant tampers + flat reads' },
-  { id: 'der-overvoltage',  label: '☀️ Solar Backfeed',       agent: 'der-management',         hint: 'Volt-VAR risk on secondaries' },
-  { id: 'heat-wave',        label: '🔥 Heat Wave',            agent: 'demand-response',        hint: 'Trigger DR cohort selection' },
-  { id: 'transformer-aging',label: '🔧 Transformer Aging',    agent: 'predictive-maintenance', hint: 'Score asset health' },
-  { id: 'cyber-burst',      label: '🛡️ Cyber Anomaly',        agent: 'grid-cybersecurity',     hint: 'Unauthorized firmware queries' },
-  { id: 'ev-surge',         label: '🔌 EV Plug-in Surge',     agent: 'ev-load-orchestration',  hint: 'Evening EV charging burst' },
-  { id: 'weather-alert',    label: '🌦️ Weather Alert',         agent: 'weather-impact',         hint: 'Heat warning + storm watch' },
+  { id: 'drone-survey', label: 'Drone Survey Findings', agent: 'gam-asset-image-analysis', hint: 'Imagery batch flagged 14 insulator anomalies on circuit T-44' },
+  { id: 'vegetation-spike', label: 'Vegetation Encroachment', agent: 'gam-vegetation-management', hint: 'LiDAR shows 3 spans below clearance on OH-12 corridor' },
+  { id: 'dga-spike', label: 'Transformer DGA Spike', agent: 'gam-transformer-failure-risk', hint: 'Acetylene rose 4× on bank TX-09 — investigate' },
+  { id: 'thermal-breach', label: 'Thermal Breach Forecast', agent: 'gam-rating-breach-prediction', hint: 'Heat dome forecast → 6 lines projected over rating in 72h' },
+  { id: 'overload-event', label: 'Live Overload', agent: 'gam-transformer-overload', hint: 'TX-22 at 138% nameplate, oil temp climbing' },
+  { id: 'ug-cable-pd', label: 'UG Cable PD Trend', agent: 'gam-underground-cable-health', hint: 'PD on cable C-301 trending up — aging risk' },
+  { id: 'inspection-batch', label: 'Inspection Backlog', agent: 'gam-inspection-prioritization', hint: '412 inspections pending — propose priority order' },
+  { id: 'design-audit', label: 'Design QA Audit', agent: 'gam-overhead-line-design-qa', hint: 'Audit OH-line designs in past 12 months for code conformance' },
 ];
 
 export function ScenarioPanel({ onRan, substations }: { onRan: () => void; substations: Substation[] }) {
@@ -47,7 +47,7 @@ export function ScenarioPanel({ onRan, substations }: { onRan: () => void; subst
             title={s.hint}
           >
             <div className="text-xs font-medium text-grid-accent leading-tight">{busy === s.id ? '⏳' : s.label}</div>
-            <div className="text-xs text-grid-info font-mono mt-0.5">→ ami-{s.agent}</div>
+            <div className="text-xs text-grid-info font-mono mt-0.5">→ {s.agent}</div>
             <div className="text-xs text-slate-500 mt-0.5 line-clamp-1">{s.hint}</div>
           </button>
         ))}
