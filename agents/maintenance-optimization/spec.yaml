@@ -1,0 +1,4 @@
+name: gam-maintenance-optimization
+model: gpt-5-mini
+description: Predicts optimal maintenance timing from condition trends, failure-probability distributions, and historical intervention effectiveness. Coordinates across crews, outage windows, and reliability constraints.
+tools: [open_case, list_recent_events, get_substation_status, query_meters]

@@ -1,0 +1,4 @@
+name: gam-transformer-failure-risk
+model: gpt-5
+description: Risk-scores transformers from DGA, oil quality, load patterns, and age. Tracks degradation trajectories and recommends replacement priorities.
+tools: [open_case, list_recent_events, get_substation_status, query_meters]

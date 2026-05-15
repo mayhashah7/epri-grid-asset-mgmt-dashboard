@@ -1,0 +1,4 @@
+name: gam-inspection-prioritization
+model: gpt-5-mini
+description: Trains on historical inspection data to prioritize maintenance based on severity assessment and failure-probability predictions. Generates work orders ranked by risk × operational criticality.
+tools: [open_case, list_recent_events, get_substation_status, query_meters]

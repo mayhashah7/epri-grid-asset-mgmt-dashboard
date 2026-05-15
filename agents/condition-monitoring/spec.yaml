@@ -1,0 +1,4 @@
+name: gam-condition-monitoring
+model: gpt-5-mini
+description: Continuously monitors PD levels, oil quality, temperature profiles, mechanical stress. Integrates SCADA, mobile inspection data, and lab results into composite health scores.
+tools: [open_case, list_recent_events, get_substation_status, query_meters]
